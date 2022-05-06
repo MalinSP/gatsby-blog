@@ -1,0 +1,140 @@
+---
+frontmatter:
+---
+
+import { Link } from 'gatsby'
+import { FiInfo } from 'react-icons/fi'
+import { Counter, LikeButton, RegVideo, Video } from '../components/Complete'
+
+<section className="mdx-page">
+
+## my first MDX file
+
+**I'm baby kogi wayfarers yr, vape hell of put a bird on it farm-to-table freegan man braid. Waistcoat letterpress listicle, small batch church-key ethical drinking vinegar la croix kogi celiac.**
+Brunch praxis meggings copper mug, celiac air plant lumbersexual blog yes plz wayfarers umami you probably haven't heard of them. Mlkshk yuccie aesthetic pinterest PBR&B leggings. Letterpress green juice kale chips irony coloring book kogi.Cold-pressed marfa forage paleo readymade tattooed gentrify VHS pabst normcore DSA deep v everyday carry yes plz salvia. Squid cold-pressed poutine, small batch keffiyeh asymmetrical YOLO hexagon four loko swag.
+
+# my heading 1
+
+<h1>JSX heading</h1>
+
+<div className="code">
+
+```js
+const firstName = 'Sergey'
+const lastName = 'Malin'
+```
+
+</div>
+
+<div className="nice-text">
+ <h3>nice text</h3>
+
+<FiInfo className="nice-text-icon" />
+
+Locavore neutra migas celiac yuccie seitan. Venmo tousled DIY shaman salvia. Flexitarian tilde cardigan man bun hexagon, fixie bespoke YOLO mustache godard typewriter yuccie before they sold out cray echo park. Polaroid cray asymmetrical fashion axe, actually cliche jianbing banh mi enamel pin try-hard ugh.
+
+ </div>
+
+<h2>React Components </h2>
+
+<Counter />
+
+```jsx
+
+```
+
+<LikeButton />
+
+<h2>Video Component</h2>
+<RegVideo />
+<Video />
+<h2>regular heading</h2>
+<h2 title="true">title heading</h2>
+<h4>inline code</h4>
+
+`console.log("hello there")`
+
+<h4>Blockquote element</h4>
+
+<blockquote display="default">
+  Locavore neutra migas celiac yuccie seitan. Venmo tousled DIY shaman salvia.
+</blockquote>
+
+<blockquote display="info">
+  Locavore neutra migas celiac yuccie seitan. Venmo tousled DIY shaman salvia.
+</blockquote>
+
+<blockquote display="warning">
+  Locavore neutra migas celiac yuccie seitan. Venmo tousled DIY shaman salvia.
+</blockquote>
+
+<blockquote>
+  Mlkshk yuccie aesthetic pinterest PBR&B leggings. Letterpress green juice kale
+  chips irony coloring book kogi.Cold-pressed marfa forage paleo readymade
+  tattooed gentrify VHS pabst normcore DSA deep v everyday carry yes plz salvia.
+  Squid cold-pressed poutine, small batch keffiyeh asymmetrical YOLO hexagon
+  four loko swag.
+</blockquote>
+
+#### Javascript
+
+```js
+// comments
+const name = 'john'
+const channel = 'coding addict'
+
+function featuredProducts(data) {
+  return data.filter(item => {
+    return item.featured === true
+  })
+}
+featuredProducts()
+```
+
+#### JSX
+
+```jsx
+import React from 'react'
+
+const Counter = () => {
+  const [count, setCount] = React.useState(0)
+  return (
+    <section className="counter">
+      <h4>show some love to MDX</h4>
+      <h4>likes {count}</h4>
+      <button className="btn btn-danger" onClick={() => setCount(count + 1)}>
+        i like mdx
+      </button>
+    </section>
+  )
+}
+export default Counter
+```
+
+#### HTML
+
+```html
+<h1>hello world</h1>
+<p class="random">random text</p>
+<section class="contact">
+  <div class="title">
+    <h1>contact us</h1>
+  </div>
+</section>
+```
+
+#### CSS
+
+```css
+max-width: 500px;
+border-radius: var(--radius);
+padding: 1rem 1.5rem;
+background: var(--clr-grey-10);
+text-align: center;
+```
+
+<Link to="/posts" className="btn center-btn">
+  back to posts
+</Link>
+
+</section>
